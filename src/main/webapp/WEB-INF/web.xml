@@ -6,6 +6,12 @@
                       https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
          version="5.0"
          metadata-complete="true">
+    <!--    初始化配置项目-->
+    <context-param>
+        <param-name>dbUrl</param-name>
+        <param-value>jdbc:mysql://127.0.0.1:3306/select_test?useSSL=false&amp;serverTimezone=UTC</param-value>
+    </context-param>
+
     <servlet>
         <servlet-name>hi</servlet-name>
         <servlet-class>com.yangsen.servlet.HelloServlet</servlet-class>
@@ -31,5 +37,14 @@
     <servlet-mapping>
         <servlet-name>getName</servlet-name>
         <url-pattern>/getName</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>dbUrl</servlet-name>
+        <servlet-class>com.yangsen.servlet.GetParamServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dbUrl</servlet-name>
+        <url-pattern>/dbUrl</url-pattern>
     </servlet-mapping>
 </web-app>
