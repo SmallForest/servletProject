@@ -47,4 +47,13 @@
         <servlet-name>dbUrl</servlet-name>
         <url-pattern>/dbUrl</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>dis</servlet-name>
+        <servlet-class>com.yangsen.servlet.DispatcherServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dis</servlet-name>
+        <url-pattern>/dis</url-pattern>
+    </servlet-mapping>
 </web-app>
