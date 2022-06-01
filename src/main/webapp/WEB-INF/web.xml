@@ -83,4 +83,13 @@
         <servlet-name>verify</servlet-name>
         <url-pattern>/verify</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Redirect</servlet-name>
+        <servlet-class>com.yangsen.servlet.RedirectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Redirect</servlet-name>
+        <url-pattern>/redirect</url-pattern>
+    </servlet-mapping>
 </web-app>
