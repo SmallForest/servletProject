@@ -14,4 +14,22 @@
         <servlet-name>hi</servlet-name>
         <url-pattern>/welcome</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>setName</servlet-name>
+        <servlet-class>com.yangsen.servlet.SetDataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>setName</servlet-name>
+        <url-pattern>/setName</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getName</servlet-name>
+        <servlet-class>com.yangsen.servlet.getDataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getName</servlet-name>
+        <url-pattern>/getName</url-pattern>
+    </servlet-mapping>
 </web-app>
