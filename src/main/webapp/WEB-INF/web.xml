@@ -56,4 +56,13 @@
         <servlet-name>dis</servlet-name>
         <url-pattern>/dis</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>pro</servlet-name>
+        <servlet-class>com.yangsen.servlet.PropertiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>pro</servlet-name>
+        <url-pattern>/pro</url-pattern>
+    </servlet-mapping>
 </web-app>
