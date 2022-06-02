@@ -101,4 +101,15 @@
         <servlet-name>req</servlet-name>
         <url-pattern>/req</url-pattern>
     </servlet-mapping>
+
+    <!--filter过滤-->
+    <filter>
+        <filter-name>charFilter</filter-name>
+        <filter-class>com.yangsen.filter.CharEncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>charFilter</filter-name>
+        <!--所有匹配/的请求都过滤-->
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 </web-app>
