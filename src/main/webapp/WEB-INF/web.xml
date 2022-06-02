@@ -112,4 +112,8 @@
         <!--所有匹配/的请求都过滤-->
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+    
+    <listener>
+        <listener-class>com.yangsen.listener.ListenerServlet</listener-class>
+    </listener>
 </web-app>
