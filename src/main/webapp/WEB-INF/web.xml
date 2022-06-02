@@ -92,4 +92,13 @@
         <servlet-name>Redirect</servlet-name>
         <url-pattern>/redirect</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>req</servlet-name>
+        <servlet-class>com.yangsen.servlet.RequestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>req</servlet-name>
+        <url-pattern>/req</url-pattern>
+    </servlet-mapping>
 </web-app>
